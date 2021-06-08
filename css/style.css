@@ -1,0 +1,66 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Global Class */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.highlight{
+    color: #8daff8;
+    font-weight: bold;
+}
+
+/* Header */
+header{
+    background: #26324c;
+    color: #ffffff;
+    min-height: 20px;
+    border-bottom: #8daff8 3px solid;
+}
+
+header #logo{
+    float: left;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #26324c;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Portofolio */
+ul#portofolio-list {
+    margin: 0;
+    padding: 0;
+}
+
+ul#portofolio-list li.portofolio{
+    list-style: none;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    background: #ded5f3;
+}
+
+.portofolio-title{
+    color: #26324c;
+}
+
+.tech-list p{
+    margin-bottom: 0;
+}
