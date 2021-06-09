@@ -49,25 +49,22 @@ footer{
 
 /* Portofolio */
 ul#portofolio-list {
-    margin: 0;
+    margin: 0 10px 0 0;
     padding: 0;
 }
 
-ul#portofolio-list li{
+ul#portofolio-list li.portofolio{
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: block
 }
 
 .portofolio{
     padding: 20px;
-    border-radius: 25px;
     margin-bottom: 15px;
-    background: #ded5f3;
     overflow: auto;
-}
-
-.portofolio-title{
-    color: #26324c;
+    border-bottom: #8daff8 3px solid;
 }
 
 .portofolio .left-part{
@@ -76,11 +73,23 @@ ul#portofolio-list li{
 }
 .portofolio .right-part{
     float: right;
-    width: 50%;
+    width: 45%;
 }
-
+.portofolio-title{
+    background-color: #8daff8;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 0;
+}
 .tech-list p{
     margin-bottom: 0;
+}
+.portofolio-link{
+    margin: 10px 0;
+}
+.portofolio-link a i{
+    font-size: 20px;
+    padding: 10px;
 }
 
 /* image slideshow*/
@@ -130,19 +139,40 @@ ul#portofolio-list li{
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
 
-  .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #26324c;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-  }
+.dot-container{
+    text-align:center;
+    margin-bottom: 10px;
+}
 
-  .active, .dot:hover {
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #26324c;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
     background-color: #8692aa;
+}
+
+/**/
+.youtube {
+    background: #bb0000;
+    color: white;
+    width: fit-content;
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
   }
+  
