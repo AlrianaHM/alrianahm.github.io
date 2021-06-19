@@ -48,21 +48,12 @@ footer{
 }
 
 /* Portofolio */
-ul#portofolio-list {
-    margin: 0 10px 0 0;
-    padding: 0;
-}
-
-ul#portofolio-list li.portofolio{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: block
-}
 
 .portofolio{
-    padding: 20px;
-    margin-bottom: 15px;
+    list-style: none;
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
     overflow: auto;
     border-bottom: #8daff8 3px solid;
 }

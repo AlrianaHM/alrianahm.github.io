@@ -1,10 +1,19 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+showAllSlides(slideIndex);
 
-function showSlides(n){
+function showAllSlides(){
+    const portos = document.getElementsByClassName("portofolio");
+    console.log(portos)
+    for (const p of portos) {
+        showSlides(p.id, 1)
+    }
+}
+
+function showSlides(portoId, n){
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
+    var porto = porto1 = document.getElementById(portoId)
+    var slides = porto.getElementsByClassName("mySlides");
+    var dots = porto.getElementsByClassName("dot");
 
     if (n > slides.length){
         slideIndex = 1;
@@ -21,15 +30,14 @@ function showSlides(n){
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    console.log(slides[slideIndex-1]);
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
 
-function currentSlide(n){
-    showSlides(slideIndex = n);
+function currentSlide(portoId, n){
+    showSlides(portoId, slideIndex = n);
 }
 
-function plusSlides(n){
-    showSlides(slideIndex += n);
+function plusSlides(portoId,n){
+    showSlides(portoId, slideIndex += n);
 }

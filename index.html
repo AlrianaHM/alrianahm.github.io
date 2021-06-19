@@ -23,7 +23,7 @@
             <div class="container">
                 <h1 class="page-title">Portofolio</h1>
                 <ul id="portofolio-list">
-                    <li class="portofolio">
+                    <li class="portofolio" id="porto1">
                         <div class="left-part">
                             <h3 class="portofolio-title">Website Design</h3>
                             <p class="portofolio-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -63,14 +63,66 @@
                                     <div class="text">Caption Three</div>
                                 </div>
                                 
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <a class="prev" onclick="plusSlides('porto1', -1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides('porto1', 1)">&#10095;</a>
                             </div>
                             <br>
                             <div class="dot-container">
-                                <span class="dot" onclick="currentSlide(1)"></span> 
-                                <span class="dot" onclick="currentSlide(2)"></span> 
-                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                <span class="dot" onclick="currentSlide('porto1', 1)"></span> 
+                                <span class="dot" onclick="currentSlide('porto1', 2)"></span> 
+                                <span class="dot" onclick="currentSlide('porto1', 3)"></span> 
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="portofolio" id="porto2">
+                        <div class="left-part">
+                            <h3 class="portofolio-title">Website Design</h3>
+                            <p class="portofolio-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            
+                            <div class="tech-list">
+                                <p>Built Using:</p>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+
+                            <div class="portofolio-link">
+                                <a href="#"><i class="fa fa-youtube-play"></i></a> 
+                                <a href="#"><i class="fa fa-github"></i></a> 
+                                <a href="#"><i class="fa fa-globe"></i></a> 
+                            </div>
+                        </div>
+                        <div class="right-part">
+                            <div class="slideshow-container">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img src="./img/portofolio/1/1.jpg" style="width:100%">
+                                    <div class="text">Caption Text</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img src="./img/portofolio/1/2.jpg" style="width:100%">
+                                    <div class="text">Caption Two</div>
+                                </div>
+                                
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img src="./img/portofolio/1/3.jpg" style="width:100%">
+                                    <div class="text">Caption Three</div>
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides('porto2', -1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides('porto2', 1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('porto2', 1)"></span> 
+                                <span class="dot" onclick="currentSlide('porto2', 2)"></span> 
+                                <span class="dot" onclick="currentSlide('porto2', 3)"></span> 
                             </div>
                         </div>
                     </li>
