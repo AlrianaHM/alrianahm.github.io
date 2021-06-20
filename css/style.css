@@ -1,0 +1,169 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Global Class */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.highlight{
+    color: #8daff8;
+    font-weight: bold;
+}
+
+/* Header */
+header{
+    background: #26324c;
+    color: #ffffff;
+    min-height: 20px;
+    border-bottom: #8daff8 3px solid;
+}
+
+#main{
+    margin-bottom: 75px;
+}
+
+header #logo{
+    float: left;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #26324c;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Portofolio */
+
+.portofolio{
+    list-style: none;
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
+    overflow: auto;
+    border-bottom: #8daff8 3px solid;
+}
+
+.portofolio .left-part{
+    float: left;
+    width: 50%;
+}
+.portofolio .right-part{
+    float: right;
+    width: 45%;
+}
+.portofolio-title{
+    background-color: #8daff8;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 0;
+}
+.tech-list p{
+    margin-bottom: 0;
+}
+.portofolio-link{
+    margin: 10px 0;
+}
+.portofolio-link a i{
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* image slideshow*/
+.slideshow-container{
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+} 
+
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot-container{
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #26324c;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #8692aa;
+}
+
+/**/
+.youtube {
+    background: #bb0000;
+    color: white;
+    width: fit-content;
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
