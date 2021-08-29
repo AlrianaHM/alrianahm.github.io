@@ -152,18 +152,47 @@ footer{
     background-color: #8692aa;
 }
 
-/**/
-.youtube {
+/*social bar*/
+.youtube-bar {
     background: #bb0000;
     color: white;
-    width: fit-content;
 }
-.icon-bar a {
+
+.mail-bar {
+    background: #55ACEE;
+    color: white;
+}
+
+.github-bar {
+    background: #434550;
+    color: white;
+}
+
+.linkedin-bar {
+    background: #007bb5;
+    color: white;
+}
+
+.social-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.social-bar a {
     display: block;
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
-  }
+    line-height: normal;
+}
+
+.social-bar a:hover {
+    background-color: #000;
+}
   
